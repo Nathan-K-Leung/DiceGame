@@ -2,47 +2,91 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class DiceGame {
-
+	private static String[][] language;
+	private static int lang=0;
+	
 	public static void main(String[] args) {
 		int die1;
 		int die2;
 		String[] playerChoices;
+		language = initLang();
+		String langChoice = getInput(language[lang][0]);
+		lang = Integer.parseInt(langChoice);
 		die1 = roll();
 		die2 = roll();
 		String choice;
-		choice = getInput("Do you want to play?\nYes\nNo");
+		choice = getInput(language[lang][1]);
 		choice = choice.toLowerCase();
 		int count = 0;
-		String playerCount = getInput("How many players are there?");
+		String playerCount = getInput(language[lang][2]);
 		count = Integer.parseInt(playerCount);
 		playerChoices = new String[count];
-		while(choice.equals("yes")) {
+		while(choice.equals((language[lang][3]))) { 
 			
 			for(int c= 0; c < count; c++) {
-			playerChoices[c] = getInput("Player "+(c+1)+": [0] Even\n[1] Odd");
+			playerChoices[c] = getInput((language[lang][4])+(c+1)+(language[lang][5]));
 			
 			}
-			System.out.println("Die 1: "+die1+"\nDie 2: "+die2);
+			System.out.println((language[lang][6])+die1+(language[lang][7])+die2);
 			//Start a new loop here.
 			for(int c=0; c<count;c++) {
 				if(didIWin(die1,die2,playerChoices[c]))
 				{
-					System.out.println("Player "+(c+1)+" wins!");
+					System.out.println(((language[lang][4])+(c+1)+language[lang][8]));
 				}else
 				{
-					System.out.println("Player "+(c+1)+" loses!");
+					System.out.println(((language[lang][4])+(c+1)+language[lang][9]));
 				}
 			}
 			
-			choice = getInput("Do you want to play?\nYes\nNo");
+			choice = getInput(language[lang][10]);
 			choice = choice.toLowerCase();
 			die1 = roll();
 			die2 = roll();
 		}
 	}
+	private static String[][] initLang() {
+		String [][] temp = new String [][] {
+			{//english
+				"Enter language:\n[0] English\n[1] Hawaiian Pidgin",
+				"Do you want to play?\nYes\nNo",
+				"How many players are there?",
+				"yes",
+				"Player ",
+				": [0] Even\n[1] Odd",
+				"Die 1: ",
+				"\nDie 2: ",
+				 " wins!",
+				 " loses!", 
+				"Do you want to play?\nYes\nNo"
+				 },
+			{
+				"Enter language:\n[0] English\n[1] Hawaiian Pidgin",
+				"Like try?\nYessah\nNo",
+				"How many dakine Braddahs?", 
+				"yessah",
+				"Braddah ",
+				": [0] Even\n[0] Odd",
+				"Die 1: ", 
+				"\nDie 2: ",
+				" winnah!", 
+				" no need win.",
+				"One more time?\nYes\nNo",
+				
+			},
+		}; 
+		return temp;
+		
+	}
 	private static boolean didIWin(int die1, int die2, String choice)
 	{
-		
+		int sum = die1 + die2;
+		if ((sum%2!=0) && (choice.equals("1"))) {
+			return true;
+		} else
+		if ((sum%2==0) && (choice.equals("0"))) {
+			return true;
+		} else
 		return false;
 	}
 	
