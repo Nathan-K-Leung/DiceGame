@@ -77,14 +77,14 @@ public class DiceGame {
 				"Enter language:\n[0] English\n[1] Hawaiian Pidgin [2] Chinese",
 				"你要玩吗?\n要\n不要",
 				"有多少玩家?",
-				"是",
+				"要",
 				"玩家 ",
-				": [0] Even\n[1] Odd",
-				"Die 1: ",
-				"\nDie 2: ",
-				 " wins!",
-				 " loses!", 
-				"Do you want to play?\nYes\nNo"
+				": [0] 偶数\n[1] 奇数",
+				"骰子 1: ",
+				"\n骰子 2: ",
+				 " 获胜!",
+				 " 失去!", 
+				 "你要玩吗?\n要\n不要"
 				 },
 		}; 
 		return temp;
