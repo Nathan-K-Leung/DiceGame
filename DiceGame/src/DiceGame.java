@@ -48,7 +48,7 @@ public class DiceGame {
 	private static String[][] initLang() {
 		String [][] temp = new String [][] {
 			{//english
-				"Enter language:\n[0] English\n[1] Hawaiian Pidgin",
+				"Enter language:\n[0] English\n[1] Japansese",
 				"Do you want to play?\nYes\nNo",
 				"How many players are there?",
 				"yes",
@@ -61,17 +61,17 @@ public class DiceGame {
 				"Do you want to play?\nYes\nNo"
 				 },
 			{
-				"Enter language:\n[0] English\n[1] Hawaiian Pidgin",
-				"Like try?\nYessah\nNo",
-				"How many dakine Braddahs?", 
-				"yessah",
-				"Braddah ",
-				": [0] Even\n[0] Odd",
-				"Die 1: ", 
-				"\nDie 2: ",
-				" winnah!", 
-				" no need win.",
-				"One more time?\nYes\nNo",
+				"Enter language:\n[0] English\n[1] Japanese",
+				"遊びましょう？\\nはい\\nいいえ",
+				"プレイヤーは幾ついますか?", 
+				"はい",
+				"プレイヤー ",
+				": [0] 偶数 \n[1] 奇数",
+				"賽 1: ", 
+				"\n賽 2: ",
+				"は　勝ちます！", 
+				"は　負けます！",
+				"また遊びませんか？\\nはい\\nいいえ",
 				
 			},
 		}; 
