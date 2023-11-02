@@ -74,6 +74,18 @@ public class DiceGame {
 				"One more time?\nYes\nNo",
 				
 			},
+			{"Enter language:\n[0] English\n[1] Hawaiian Pidgin\n[2] Hawaiian",
+				"Makemake ʻoe e pāʻani i ka pāʻani?\nʻAe\nʻAʻole",
+				"Ehia kanaka e pāʻani nei?",
+				"ʻAe",
+				"mea pāʻani ", //player
+				": [0] ʻoiai\n[1] ʻokoʻa", //even or odd
+				"Die ʻekahi: ", 
+				"/nDie ʻelua",
+				" lanakila!",
+				" lilo!",
+				"Makemake ʻoe e pāʻani hou i ka pāʻani?"
+			}
 		}; 
 		return temp;
 		
