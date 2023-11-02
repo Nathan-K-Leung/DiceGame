@@ -47,7 +47,7 @@ public class DiceGame {
 	}
 	private static String[][] initLang() {
 		String [][] temp = new String [][] {
-			{//english
+			{//English (0)
 				"Enter language:\n[0] English\n[1] Hawaiian Pidgin",
 				"Do you want to play?\nYes\nNo",
 				"How many players are there?",
@@ -60,7 +60,7 @@ public class DiceGame {
 				 " loses!", 
 				"Do you want to play?\nYes\nNo"
 				 },
-			{
+			{//Hawaiian Pidgin (1)
 				"Enter language:\n[0] English\n[1] Hawaiian Pidgin",
 				"Like try?\nYessah\nNo",
 				"How many dakine Braddahs?", 
