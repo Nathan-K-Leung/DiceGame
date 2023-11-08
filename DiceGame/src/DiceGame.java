@@ -77,7 +77,7 @@ public class DiceGame {
 			{"Enter language:\n[0] English\n[1] Hawaiian Pidgin\n[2] Hawaiian",
 				"Makemake ʻoe e pāʻani i ka pāʻani?\nʻAe\nʻAʻole",
 				"Ehia kanaka e pāʻani nei?",
-				"ʻAe",
+				"ʻAe", //yes
 				"mea pāʻani ", //player
 				": [0] ʻoiai\n[1] ʻokoʻa", //even or odd
 				"Die ʻekahi: ", 
