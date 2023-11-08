@@ -61,7 +61,7 @@ public class DiceGame {
 				"Do you want to play?\nYes\nNo"
 				 },
 			{//Hawaiian Pidgin (1)
-					 "Enter language:\n[0] English\n[1] Hawaiian Pidgin [2] Chinese",
+				"Enter language:\n[0] English\n[1] Hawaiian Pidgin [2] Chinese",
 				"Like try?\nYessah\nNo",
 				"How many dakine Braddahs?", 
 				"yessah",
